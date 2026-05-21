@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="tokfluxLogoTitle">
+  <title id="tokfluxLogoTitle">TokFlux</title>
+  <rect width="128" height="128" rx="28" fill="#09111b"/>
+  <path d="M30 30h68v12H42v18h46v12H42v26H30z" fill="#2dd4bf"/>
+  <path d="M70 42h28v12H82v18h16v12H70z" fill="#7dd3fc"/>
+  <circle cx="92" cy="92" r="12" fill="#38bdf8"/>
+</svg>
+
