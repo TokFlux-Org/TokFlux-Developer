@@ -32,37 +32,38 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.tokflux-blog-route {
+  min-height: 100vh;
   background-image:
     linear-gradient(var(--tokflux-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--tokflux-grid) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
-.Layout {
+.tokflux-blog-route .Layout {
   background:
     radial-gradient(circle at top, rgba(45, 212, 191, 0.08), transparent 28%),
     radial-gradient(circle at right top, rgba(99, 102, 241, 0.08), transparent 26%);
 }
 
-.VPNavBar,
-.VPDocAsideOutline .content,
-.VPLocalNav {
+.tokflux-blog-route .VPNavBar,
+.tokflux-blog-route .VPDocAsideOutline .content,
+.tokflux-blog-route .VPLocalNav {
   backdrop-filter: blur(18px);
 }
 
-.VPNavBar.has-sidebar .content-body,
-.VPNavBar .content-body,
-.VPDoc .container,
-.VPFooter .container {
+.tokflux-blog-route .VPNavBar.has-sidebar .content-body,
+.tokflux-blog-route .VPNavBar .content-body,
+.tokflux-blog-route .VPDoc .container,
+.tokflux-blog-route .VPFooter .container {
   max-width: 1380px;
 }
 
-.VPHome {
+.tokflux-blog-route .VPHome {
   position: relative;
 }
 
-.VPHome::before {
+.tokflux-blog-route .VPHome::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -72,60 +73,60 @@ body {
   pointer-events: none;
 }
 
-.VPHomeHero .name,
-.VPHomeHero .text {
+.tokflux-blog-route .VPHomeHero .name,
+.tokflux-blog-route .VPHomeHero .text {
   letter-spacing: 0;
 }
 
-.VPHomeHero .name {
+.tokflux-blog-route .VPHomeHero .name {
   max-width: 11ch;
   font-size: clamp(3rem, 5vw, 4.8rem);
   line-height: 0.95;
 }
 
-.VPHomeHero .text {
+.tokflux-blog-route .VPHomeHero .text {
   max-width: 18ch;
   font-size: clamp(1.35rem, 2vw, 1.8rem);
   line-height: 1.12;
   color: var(--vp-c-text-2);
 }
 
-.VPHomeHero .tagline {
+.tokflux-blog-route .VPHomeHero .tagline {
   max-width: 720px;
   font-size: 1rem;
   color: var(--tokflux-muted);
 }
 
-.main .vp-doc,
-.vp-doc .custom-block,
-.VPDoc .content,
-.VPHome .container {
+.tokflux-blog-route .main .vp-doc,
+.tokflux-blog-route .vp-doc .custom-block,
+.tokflux-blog-route .VPDoc .content,
+.tokflux-blog-route .VPHome .container {
   position: relative;
   z-index: 1;
 }
 
-.vp-doc h1,
-.vp-doc h2,
-.vp-doc h3 {
+.tokflux-blog-route .vp-doc h1,
+.tokflux-blog-route .vp-doc h2,
+.tokflux-blog-route .vp-doc h3 {
   letter-spacing: 0;
 }
 
-.vp-doc a,
-.VPLink.link {
+.tokflux-blog-route .vp-doc a,
+.tokflux-blog-route .VPLink.link {
   text-underline-offset: 3px;
 }
 
-.vp-doc div[class*='language-'] {
+.tokflux-blog-route .vp-doc div[class*='language-'] {
   border: 1px solid var(--vp-c-border);
   border-radius: 8px;
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.16);
 }
 
-.vp-doc .custom-block {
+.tokflux-blog-route .vp-doc .custom-block {
   border-radius: 8px;
 }
 
-.vp-doc table {
+.tokflux-blog-route .vp-doc table {
   display: table;
   width: 100%;
 }
@@ -165,7 +166,7 @@ body {
   margin: 6px 0;
 }
 
-.VPDoc.has-aside .content-container {
+.tokflux-blog-route .VPDoc.has-aside .content-container {
   max-width: 860px;
 }
 
@@ -180,11 +181,12 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .VPHomeHero .actions {
+  .tokflux-blog-route .VPHomeHero .actions {
     width: 100%;
   }
 
-  .VPHomeHero .action {
+  .tokflux-blog-route .VPHomeHero .action {
     width: 100%;
   }
 }
+

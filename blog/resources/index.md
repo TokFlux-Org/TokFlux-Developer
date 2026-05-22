@@ -13,8 +13,8 @@ readingTime: false
 ## 常用入口
 
 - [文档概览](/docs/)
-- [示例](/docs/examples/)
-- [更新日志](/docs/changelog/)
+- [使用说明](/docs/markdown-examples)
+- [API 示例](/docs/api-examples)
 - [RSS 订阅](/feed.rss)
 - [时间线](/blog/timeline/)
 

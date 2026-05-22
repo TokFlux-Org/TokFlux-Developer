@@ -1,8 +1,21 @@
 import { defineConfig } from 'vitepress'
+import type { PluginOption } from 'vite'
 import { blogTheme } from './blog-theme.mts'
 
 const siteUrl = process.env.SITE_URL || 'https://developer.tokflux.com'
 const ogImage = `${siteUrl}/covers/tokflux-og.png`
+
+function excludeDocsFromBlog(): PluginOption {
+  return {
+    name: 'tokflux-exclude-docs-from-blog',
+    enforce: 'post',
+    config(config: any) {
+      const blog = config.vitepress?.site?.themeConfig?.blog
+      if (!blog?.pagesData) return
+      blog.pagesData = blog.pagesData.filter((page: { route: string }) => !page.route.startsWith('/docs/'))
+    }
+  }
+}
 
 export default defineConfig({
   extends: blogTheme,
@@ -38,6 +51,9 @@ export default defineConfig({
       lazyLoading: true
     }
   },
+  vite: {
+    plugins: [excludeDocsFromBlog()]
+  },
   themeConfig: {
     logo: '/tokenflux-logo.png',
     siteTitle: 'TokFlux',
@@ -67,12 +83,39 @@ export default defineConfig({
           text: '文档',
           items: [
             { text: '概览', link: '/docs/' },
-            { text: '指南', link: '/docs/guide/' },
-            { text: 'API', link: '/docs/api/' },
-            { text: '示例', link: '/docs/examples/' },
-            { text: '定价', link: '/docs/pricing/' },
-            { text: '更新日志', link: '/docs/changelog/' },
-            { text: '部署', link: '/docs/deploy/' }
+            { text: '使用说明', link: '/docs/markdown-examples' },
+            { text: 'API 示例', link: '/docs/api-examples' }
+          ]
+        },
+        {
+          text: '环境配置',
+          items: [
+            { text: 'Node 环境配置', link: '/docs/pz/node_a' },
+            { text: 'Codex 中转配置', link: '/docs/pz/codex_a' },
+            { text: 'Claude 中转配置', link: '/docs/pz/claude_a' }
+          ]
+        },
+        {
+          text: '插件安装',
+          items: [
+            {
+              text: 'Codex',
+              collapsed: true,
+              items: [
+                { text: 'Codex CLI', link: '/docs/codex/codex_a' },
+                { text: 'Codex IDE 插件', link: '/docs/codex/codex_b' },
+                { text: 'Codex 桌面端', link: '/docs/codex/codex_c' }
+              ]
+            },
+            {
+              text: 'Claude',
+              collapsed: true,
+              items: [
+                { text: 'Claude CLI', link: '/docs/claude/claude_a' },
+                { text: 'Claude IDE 插件', link: '/docs/claude/claude_b' },
+                { text: 'Claude 桌面端', link: '/docs/claude/claude_c' }
+              ]
+            }
           ]
         }
       ]
