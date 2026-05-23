@@ -1,20 +1,15 @@
 ---
-title: 博客概览
-description: TokFlux 技术博客的教程、排障、对比分析与公告入口。
-hidden: true
-publish: false
-readingTime: false
+layout: home
+title: TokFlux 技术博客
+titleTemplate: TokFlux 技术博客
+description: TokFlux 的技术文章、集成教程与排障笔记。
+blog:
+  name: TokFlux
+  motto: 技术博客
+  inspiring:
+    - 记录 OpenAI 兼容网关的工程实践、SDK 示例与生产排障。
+    - 少一点入口，多一点能直接用的技术内容。
+    - 面向 AI Infra 团队，强调清晰、短小和可执行。
+  inspiringTimeout: 3600
+  pageSize: 6
 ---
-
-# 博客概览
-
-TokFlux 博客只保留少量稳定入口，方便快速找到正在解决的问题。
-
-<TopicDirectory />
-
-## 浏览入口
-
-- [教程](/blog/tutorials/)
-- [错误排查](/blog/errors/)
-- [对比分析](/blog/comparisons/)
-- [产品公告](/blog/announcements/)
