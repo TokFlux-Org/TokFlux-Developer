@@ -13,11 +13,12 @@ const Layout = defineComponent({
   name: 'TokFluxLayout',
   setup(_, { slots }) {
     const route = useRoute()
-    const isDocsRoute = computed(() => route.path === '/docs' || route.path.startsWith('/docs/'))
+    const isDocsRoute = computed(() => route.path === '/' || route.path === '/docs' || route.path.startsWith('/docs/'))
+    const routeClass = computed(() => (route.path === '/' ? 'tokflux-site-home' : 'tokflux-docs-route'))
 
     return () =>
       isDocsRoute.value
-        ? h(DefaultTheme.Layout, null, slots)
+        ? h('div', { class: routeClass.value }, h(DefaultTheme.Layout, null, slots))
         : h('div', { class: 'tokflux-blog-route' }, h(BlogLayout, null, slots))
   }
 })

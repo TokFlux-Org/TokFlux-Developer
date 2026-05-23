@@ -32,6 +32,937 @@ html {
   scroll-behavior: smooth;
 }
 
+.tokflux-site-home {
+  min-height: 100vh;
+  overflow: hidden;
+  color: #111827;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(20, 184, 166, 0.16), transparent 28%),
+    radial-gradient(circle at 18% 72%, rgba(56, 189, 248, 0.12), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #f6f9fb 48%, #edf6f4 100%);
+}
+
+.dark .tokflux-site-home {
+  color: #f8fafc;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(20, 184, 166, 0.22), transparent 28%),
+    radial-gradient(circle at 18% 72%, rgba(56, 189, 248, 0.14), transparent 26%),
+    linear-gradient(180deg, #080b0f 0%, #0d1218 50%, #071713 100%);
+}
+
+.tokflux-site-home .Layout {
+  background: transparent;
+}
+
+.dark .tokflux-site-home .Layout {
+  background: transparent;
+}
+
+.tokflux-site-home .VPContent {
+  padding-top: 0;
+}
+
+.tokflux-site-home .VPPage {
+  padding: 0;
+}
+
+.tokflux-site-home .vp-doc {
+  max-width: none;
+  padding: 0;
+}
+
+.tokflux-site-home .vp-doc h1,
+.tokflux-site-home .vp-doc h2,
+.tokflux-site-home .vp-doc p {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.tokflux-home-hero,
+.tokflux-advantage-grid,
+.tokflux-scenario {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.tokflux-home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: 54px;
+  align-items: center;
+  min-height: calc(100vh - 72px);
+  padding: 86px 0 62px;
+}
+
+.tokflux-home-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.tokflux-eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.tokflux-eyebrow span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  border-radius: 999px;
+  color: #0f766e;
+  background: rgba(20, 184, 166, 0.08);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.dark .tokflux-eyebrow span {
+  border-color: rgba(94, 234, 212, 0.2);
+  color: #99f6e4;
+  background: rgba(20, 184, 166, 0.12);
+}
+
+.tokflux-home-copy h1 {
+  max-width: 760px;
+  color: #08111f;
+  font-size: clamp(2.8rem, 5.5vw, 5.25rem);
+  font-weight: 820;
+  line-height: 0.98;
+}
+
+.dark .tokflux-home-copy h1 {
+  color: #f8fafc;
+}
+
+.tokflux-home-copy h1 span {
+  display: block;
+}
+
+.tokflux-home-copy h1 span + span {
+  margin-top: 0.04em;
+}
+
+.tokflux-home-copy h1 span:last-child {
+  color: #0f766e;
+}
+
+.dark .tokflux-home-copy h1 span:last-child {
+  color: #5eead4;
+}
+
+.tokflux-lead {
+  max-width: 700px;
+  margin-top: 34px !important;
+  color: #465568;
+  font-size: 1.12rem;
+  line-height: 1.9;
+}
+
+.dark .tokflux-lead {
+  color: #b9c5c2;
+}
+
+.tokflux-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.tokflux-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.tokflux-button:hover {
+  transform: translateY(-1px);
+}
+
+.tokflux-button.primary {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #0f766e, #1188d6 62%, #7c3aed);
+  box-shadow: 0 18px 34px rgba(17, 136, 214, 0.22);
+}
+
+.tokflux-button.primary:hover {
+  background: linear-gradient(135deg, #115e59, #0f75bd 62%, #6d28d9);
+}
+
+.tokflux-button.secondary {
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  color: #111827 !important;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.tokflux-button.ghost {
+  color: #0f766e !important;
+  background: transparent;
+}
+
+.dark .tokflux-button.secondary {
+  border-color: rgba(248, 250, 252, 0.14);
+  color: #f8fafc !important;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.dark .tokflux-button.ghost {
+  color: #5eead4 !important;
+}
+
+.tokflux-proof {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 44px;
+}
+
+.tokflux-proof div {
+  padding: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.dark .tokflux-proof div {
+  border-color: rgba(248, 250, 252, 0.08);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.tokflux-proof strong {
+  display: block;
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+.dark .tokflux-proof strong {
+  color: #f8fafc;
+}
+
+.tokflux-proof span {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.dark .tokflux-proof span {
+  color: #9fb0ad;
+}
+
+.tokflux-gateway-panel {
+  position: relative;
+  padding: 22px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.62)),
+    linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(56, 189, 248, 0.08));
+  box-shadow: 0 32px 90px rgba(15, 23, 42, 0.16);
+  overflow: hidden;
+}
+
+.tokflux-gateway-panel::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  z-index: -1;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, transparent 0 18px, rgba(15, 118, 110, 0.08) 18px 19px, transparent 19px 38px),
+    linear-gradient(0deg, transparent 0 18px, rgba(15, 118, 110, 0.08) 18px 19px, transparent 19px 38px);
+  background-size: 38px 38px;
+}
+
+.tokflux-gateway-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto -16% -30% 14%;
+  height: 180px;
+  background: linear-gradient(90deg, rgba(45, 212, 191, 0), rgba(45, 212, 191, 0.2), rgba(56, 189, 248, 0));
+  filter: blur(22px);
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+.dark .tokflux-gateway-panel {
+  border-color: rgba(248, 250, 252, 0.12);
+  background:
+    linear-gradient(180deg, rgba(14, 20, 28, 0.92), rgba(9, 15, 21, 0.76)),
+    linear-gradient(135deg, rgba(20, 184, 166, 0.14), rgba(56, 189, 248, 0.1));
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.34);
+}
+
+.tokflux-panel-top {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.tokflux-panel-top img {
+  width: 44px;
+  height: 44px;
+  padding: 3px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow:
+    0 12px 26px rgba(17, 136, 214, 0.16),
+    0 0 0 1px rgba(124, 58, 237, 0.12);
+  object-fit: contain;
+}
+
+.tokflux-panel-top strong,
+.tokflux-panel-top span {
+  display: block;
+}
+
+.tokflux-panel-top strong {
+  color: #111827;
+}
+
+.dark .tokflux-panel-top strong {
+  color: #f8fafc;
+}
+
+.tokflux-panel-top span {
+  margin-top: 2px;
+  color: #64748b;
+  font-size: 0.82rem;
+}
+
+.dark .tokflux-panel-top span {
+  color: #9fb0ad;
+}
+
+.tokflux-panel-top em {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  color: #047857;
+  background: rgba(16, 185, 129, 0.12);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.tokflux-signal-map {
+  position: relative;
+  z-index: 1;
+  height: 210px;
+  margin-top: 22px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 8px;
+  background:
+    linear-gradient(120deg, rgba(15, 23, 42, 0.035), transparent 42%),
+    rgba(255, 255, 255, 0.42);
+  overflow: hidden;
+}
+
+.dark .tokflux-signal-map {
+  border-color: rgba(248, 250, 252, 0.1);
+  background:
+    linear-gradient(120deg, rgba(94, 234, 212, 0.06), transparent 42%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.tokflux-signal-map::before,
+.tokflux-signal-map::after {
+  content: "";
+  position: absolute;
+  inset: 32px 52px;
+  border: 1px solid rgba(15, 118, 110, 0.16);
+  border-radius: 999px;
+}
+
+.tokflux-signal-map::after {
+  inset: 58px 104px;
+  border-color: rgba(56, 189, 248, 0.18);
+}
+
+.tokflux-core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: grid;
+  width: 86px;
+  height: 86px;
+  place-items: center;
+  border: 1px solid rgba(45, 212, 191, 0.45);
+  border-radius: 8px;
+  color: #ecfeff;
+  background:
+    linear-gradient(135deg, rgba(20, 184, 166, 0.98), rgba(17, 136, 214, 0.98) 52%, rgba(124, 58, 237, 0.98));
+  box-shadow:
+    0 22px 48px rgba(17, 136, 214, 0.28),
+    0 0 34px rgba(124, 58, 237, 0.18);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.tokflux-core span {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  transform: rotate(-45deg);
+}
+
+.tokflux-node {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 76px;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  border-radius: 8px;
+  color: #0f766e;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.dark .tokflux-node {
+  border-color: rgba(94, 234, 212, 0.2);
+  color: #99f6e4;
+  background: rgba(8, 13, 22, 0.82);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
+.tokflux-node::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(15, 118, 110, 0), rgba(15, 118, 110, 0.45));
+}
+
+.node-a {
+  left: 28px;
+  top: 32px;
+}
+
+.node-b {
+  right: 36px;
+  top: 38px;
+}
+
+.node-c {
+  left: 52px;
+  bottom: 38px;
+}
+
+.node-d {
+  right: 44px;
+  bottom: 38px;
+}
+
+.node-e {
+  left: 50%;
+  top: 18px;
+  transform: translateX(-50%);
+}
+
+.node-a::before,
+.node-c::before {
+  left: 100%;
+}
+
+.node-b::before,
+.node-d::before {
+  right: 100%;
+  transform: rotate(180deg);
+}
+
+.node-e::before {
+  left: 50%;
+  top: 100%;
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(180deg, rgba(15, 118, 110, 0.45), rgba(15, 118, 110, 0));
+}
+
+.tokflux-code-card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 8px;
+  background: #07111d;
+  color: #d6f7ee;
+}
+
+.tokflux-code-card span {
+  color: #5eead4;
+  font-weight: 800;
+}
+
+.tokflux-code-card code {
+  display: block;
+  color: #b8c7d9;
+  background: transparent;
+  font-size: 0.86rem;
+  white-space: normal;
+}
+
+.tokflux-flow {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 46px 1fr 46px 1fr;
+  gap: 8px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.tokflux-flow span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 8px;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.72);
+  font-weight: 800;
+}
+
+.dark .tokflux-flow span {
+  border-color: rgba(248, 250, 252, 0.1);
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.tokflux-flow i {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(15, 118, 110, 0.2), rgba(15, 118, 110, 0.75));
+}
+
+.tokflux-model-cloud {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.tokflux-model-cloud span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(15, 118, 110, 0.16);
+  border-radius: 8px;
+  color: #0f766e;
+  background: rgba(20, 184, 166, 0.08);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.dark .tokflux-model-cloud span {
+  border-color: rgba(94, 234, 212, 0.18);
+  color: #99f6e4;
+  background: rgba(20, 184, 166, 0.1);
+}
+
+.tokflux-advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0 0 72px;
+}
+
+.tokflux-advantage-grid article {
+  position: relative;
+  min-height: 236px;
+  padding: 22px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tokflux-advantage-grid article::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, #0f766e, #38bdf8, #8b5cf6);
+  opacity: 0.72;
+}
+
+.tokflux-advantage-grid article:hover {
+  border-color: rgba(15, 118, 110, 0.26);
+  box-shadow: 0 22px 46px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.dark .tokflux-advantage-grid article {
+  border-color: rgba(248, 250, 252, 0.09);
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+}
+
+.tokflux-advantage-grid article span {
+  color: #0f766e;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.tokflux-advantage-grid article h2 {
+  margin-top: 38px;
+  color: #111827;
+  font-size: 1.28rem;
+  line-height: 1.35;
+}
+
+.dark .tokflux-advantage-grid article h2 {
+  color: #f8fafc;
+}
+
+.tokflux-advantage-grid article p {
+  margin-top: 14px;
+  color: #5d6a7c;
+  line-height: 1.75;
+}
+
+.dark .tokflux-advantage-grid article p {
+  color: #aebbb8;
+}
+
+.tokflux-scenario {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.78fr);
+  gap: 44px;
+  align-items: center;
+  margin-bottom: 84px;
+  padding: 34px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 8px;
+  background: #0b1220;
+  color: #f8fafc;
+  box-shadow: 0 26px 70px rgba(15, 23, 42, 0.18);
+  overflow: hidden;
+  position: relative;
+}
+
+.tokflux-scenario::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(45, 212, 191, 0.14), transparent 46%),
+    linear-gradient(135deg, transparent 0 48%, rgba(255, 255, 255, 0.04) 48% 49%, transparent 49%);
+  pointer-events: none;
+}
+
+.tokflux-scenario > * {
+  position: relative;
+  z-index: 1;
+}
+
+.tokflux-section-label {
+  color: #5eead4;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.tokflux-scenario h2 {
+  margin-top: 14px;
+  max-width: 680px;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+}
+
+.tokflux-scenario p {
+  max-width: 640px;
+  margin-top: 18px;
+  color: #b8c7d9;
+  line-height: 1.85;
+}
+
+.tokflux-scenario ol {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tokflux-scenario li {
+  display: grid;
+  gap: 6px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.tokflux-scenario li strong {
+  color: #e2edf5;
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+.tokflux-scenario li span {
+  color: #aec0ce;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.tokflux-site-home .VPNavBar {
+  border-bottom: 1px solid rgba(22, 32, 42, 0.08);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px);
+}
+
+.dark .tokflux-site-home .VPNavBar {
+  border-bottom-color: rgba(238, 244, 243, 0.08);
+  background: rgba(10, 13, 16, 0.76);
+}
+
+.tokflux-site-home .VPHome {
+  padding-bottom: 64px;
+}
+
+.tokflux-site-home .VPHomeHero {
+  padding: 108px 24px 56px;
+}
+
+.tokflux-site-home .VPHomeHero .container {
+  max-width: 1240px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tokflux-site-home .VPHomeHero .main {
+  max-width: 860px;
+}
+
+.tokflux-site-home .VPHomeHero .name,
+.tokflux-site-home .VPHomeHero .text {
+  letter-spacing: 0;
+}
+
+.tokflux-site-home .VPHomeHero .name {
+  color: #0d9488;
+  -webkit-text-fill-color: currentColor;
+  background: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.tokflux-site-home .VPHomeHero .name::before {
+  content: "API Gateway";
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  margin-right: 12px;
+  padding: 0 11px;
+  border: 1px solid rgba(13, 148, 136, 0.28);
+  border-radius: 999px;
+  color: #0f766e;
+  background: rgba(20, 184, 166, 0.08);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.dark .tokflux-site-home .VPHomeHero .name {
+  color: #5eead4;
+}
+
+.dark .tokflux-site-home .VPHomeHero .name::before {
+  border-color: rgba(94, 234, 212, 0.28);
+  color: #99f6e4;
+  background: rgba(20, 184, 166, 0.13);
+}
+
+.tokflux-site-home .VPHomeHero .text {
+  max-width: 860px;
+  color: #111827;
+  font-size: 3.45rem;
+  font-weight: 760;
+  line-height: 1.08;
+}
+
+.dark .tokflux-site-home .VPHomeHero .text {
+  color: #f8fafc;
+}
+
+.tokflux-site-home .VPHomeHero .tagline {
+  max-width: 650px;
+  margin-top: 26px;
+  color: #475569;
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+.dark .tokflux-site-home .VPHomeHero .tagline {
+  color: #b7c4c1;
+}
+
+.tokflux-site-home .VPHomeHero .actions {
+  gap: 12px;
+  padding-top: 34px;
+}
+
+.tokflux-site-home .VPHomeHero .VPButton {
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.tokflux-site-home .VPHomeHero .VPButton.brand {
+  border-color: #0f766e;
+  background: #0f766e;
+  box-shadow: 0 18px 34px rgba(15, 118, 110, 0.24);
+}
+
+.tokflux-site-home .VPHomeHero .VPButton.brand:hover {
+  border-color: #115e59;
+  background: #115e59;
+}
+
+.tokflux-site-home .VPHomeHero .VPButton.alt {
+  border: 1px solid rgba(22, 32, 42, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  color: #1f2937;
+}
+
+.dark .tokflux-site-home .VPHomeHero .VPButton.alt {
+  border-color: rgba(238, 244, 243, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: #eef4f3;
+}
+
+.tokflux-site-home .VPHomeHero .image {
+  transform: none;
+}
+
+.tokflux-site-home .VPHomeHero .image-container {
+  width: min(540px, 42vw);
+  height: auto;
+  transform: none;
+}
+
+.tokflux-site-home .VPHomeHero .image-bg {
+  display: none;
+}
+
+.tokflux-site-home .VPHomeHero .image-src {
+  position: static;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  border: 1px solid rgba(22, 32, 42, 0.12);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow:
+    0 28px 70px rgba(22, 32, 42, 0.18),
+    0 1px 0 rgba(255, 255, 255, 0.95) inset;
+}
+
+.dark .tokflux-site-home .VPHomeHero .image-src {
+  border-color: rgba(238, 244, 243, 0.16);
+  background: #10151a;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.4);
+}
+
+.tokflux-site-home .VPHomeFeatures {
+  padding: 14px 24px 72px;
+}
+
+.tokflux-site-home .VPHomeFeatures .container {
+  max-width: 1240px;
+}
+
+.tokflux-site-home .VPHomeFeatures .items {
+  gap: 14px;
+}
+
+.tokflux-site-home .VPFeature {
+  height: 100%;
+  border: 1px solid rgba(22, 32, 42, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 28px rgba(22, 32, 42, 0.08);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.tokflux-site-home .VPFeature:hover {
+  border-color: rgba(15, 118, 110, 0.32);
+  box-shadow: 0 18px 36px rgba(22, 32, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.dark .tokflux-site-home .VPFeature {
+  border-color: rgba(238, 244, 243, 0.1);
+  background: rgba(16, 21, 26, 0.78);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+}
+
+.tokflux-site-home .VPFeature .box {
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.tokflux-site-home .VPFeature .title {
+  color: #111827;
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.dark .tokflux-site-home .VPFeature .title {
+  color: #f8fafc;
+}
+
+.tokflux-site-home .VPFeature .details {
+  color: #5b6776;
+  line-height: 1.72;
+}
+
+.dark .tokflux-site-home .VPFeature .details {
+  color: #aebbb8;
+}
+
+.tokflux-site-home .VPFeature .link-text-value {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+.dark .tokflux-site-home .VPFeature .link-text-value {
+  color: #5eead4;
+}
+
 .tokflux-blog-route {
   min-height: 100vh;
   background-image:
@@ -171,12 +1102,167 @@ html {
 }
 
 @media (max-width: 1100px) {
+  .tokflux-home-hero {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: auto;
+  }
+
+  .tokflux-gateway-panel {
+    max-width: 680px;
+  }
+
+  .tokflux-advantage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tokflux-scenario {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tokflux-site-home .VPHomeHero .text {
+    font-size: 2.9rem;
+  }
+
   .tokflux-directory {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 720px) {
+  .tokflux-home-hero,
+  .tokflux-advantage-grid,
+  .tokflux-scenario {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .tokflux-home-hero {
+    gap: 32px;
+    padding: 64px 0 42px;
+  }
+
+  .tokflux-home-copy h1 {
+    font-size: 2.32rem;
+    line-height: 1.08;
+  }
+
+  .tokflux-lead {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .tokflux-actions,
+  .tokflux-actions .tokflux-button {
+    width: 100%;
+  }
+
+  .tokflux-proof,
+  .tokflux-advantage-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tokflux-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .tokflux-signal-map {
+    height: 190px;
+  }
+
+  .tokflux-signal-map::before {
+    inset: 30px 24px;
+  }
+
+  .tokflux-signal-map::after {
+    inset: 62px 72px;
+  }
+
+  .tokflux-core {
+    width: 72px;
+    height: 72px;
+  }
+
+  .tokflux-node {
+    min-width: 64px;
+    min-height: 30px;
+    padding: 0 9px;
+    font-size: 0.76rem;
+  }
+
+  .tokflux-node::before {
+    width: 34px;
+  }
+
+  .node-a {
+    left: 14px;
+    top: 28px;
+  }
+
+  .node-b {
+    right: 14px;
+    top: 34px;
+  }
+
+  .node-c {
+    left: 20px;
+    bottom: 32px;
+  }
+
+  .node-d {
+    right: 16px;
+    bottom: 30px;
+  }
+
+  .node-e {
+    top: 14px;
+  }
+
+  .tokflux-flow i {
+    width: 1px;
+    height: 20px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(15, 118, 110, 0.2), rgba(15, 118, 110, 0.75));
+  }
+
+  .tokflux-scenario {
+    margin-bottom: 56px;
+    padding: 24px;
+  }
+
+  .tokflux-scenario h2 {
+    font-size: 2.2rem;
+  }
+
+  .tokflux-site-home .VPHomeHero {
+    padding: 82px 24px 34px;
+  }
+
+  .tokflux-site-home .VPHomeHero .text {
+    font-size: 2.15rem;
+  }
+
+  .tokflux-site-home .VPHomeHero .tagline {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .tokflux-site-home .VPHomeHero .actions,
+  .tokflux-site-home .VPHomeHero .action,
+  .tokflux-site-home .VPHomeHero .VPButton {
+    width: 100%;
+  }
+
+  .tokflux-site-home .VPHomeHero .image {
+    margin-top: 32px;
+  }
+
+  .tokflux-site-home .VPHomeHero .image-container {
+    width: 100%;
+  }
+
+  .tokflux-site-home .VPHomeFeatures {
+    padding-bottom: 48px;
+  }
+
   .tokflux-directory {
     grid-template-columns: minmax(0, 1fr);
   }
