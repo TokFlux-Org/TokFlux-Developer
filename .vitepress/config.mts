@@ -20,8 +20,8 @@ function excludeDocsFromBlog(): PluginOption {
 export default defineConfig({
   extends: blogTheme,
   lang: 'zh-CN',
-  title: 'TokFlux 技术博客',
-  description: 'TokFlux 的技术文章、集成教程与排障笔记。',
+  title: 'TokFlux 企业级大模型 API 网关',
+  description: 'TokFlux 提供企业级大模型 API 网关与统一中转服务，覆盖 OpenAI、Claude、Gemini、DeepSeek、Qwen 等主流模型，帮助团队以更低成本、更少改造接入全链路 AI 场景。',
   cleanUrls: true,
   lastUpdated: true,
   metaChunk: true,
@@ -35,14 +35,14 @@ export default defineConfig({
     ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'TokFlux RSS', href: '/feed.rss' }],
     ['meta', { name: 'theme-color', content: '#0b1220' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'TokFlux 技术博客' }],
-    ['meta', { property: 'og:title', content: 'TokFlux 技术博客' }],
-    ['meta', { property: 'og:description', content: 'TokFlux 的技术文章、集成教程与排障笔记。' }],
+    ['meta', { property: 'og:site_name', content: 'TokFlux 企业级大模型 API 网关' }],
+    ['meta', { property: 'og:title', content: 'TokFlux 企业级大模型 API 网关' }],
+    ['meta', { property: 'og:description', content: 'TokFlux 提供企业级大模型 API 网关与统一中转服务，覆盖 OpenAI、Claude、Gemini、DeepSeek、Qwen 等主流模型，帮助团队以更低成本、更少改造接入全链路 AI 场景。' }],
     ['meta', { property: 'og:image', content: ogImage }],
     ['meta', { property: 'og:url', content: siteUrl }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'TokFlux 技术博客' }],
-    ['meta', { name: 'twitter:description', content: 'TokFlux 的技术文章、集成教程与排障笔记。' }],
+    ['meta', { name: 'twitter:title', content: 'TokFlux 企业级大模型 API 网关' }],
+    ['meta', { name: 'twitter:description', content: 'TokFlux 提供企业级大模型 API 网关与统一中转服务，覆盖 OpenAI、Claude、Gemini、DeepSeek、Qwen 等主流模型，帮助团队以更低成本、更少改造接入全链路 AI 场景。' }],
     ['meta', { name: 'twitter:image', content: ogImage }]
   ],
   markdown: {
@@ -72,9 +72,24 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '教程', link: '/blog/tutorials/' },
-      { text: '公告', link: '/blog/announcements/' },
-      { text: '文档', link: '/docs/' },
+      {
+        text: '文档',
+        items: [
+          { text: '快速开始', link: '/docs/' },
+          { text: '使用说明', link: '/docs/markdown-examples' },
+          { text: 'Node 环境配置', link: '/docs/pz/node_a' },
+          { text: 'Codex 接入', link: '/docs/codex/codex_a' },
+          { text: 'Claude 接入', link: '/docs/claude/claude_a' }
+        ]
+      },
+      {
+        text: '博客',
+        items: [
+          { text: '博客首页', link: '/blog/' },
+          { text: '教程', link: '/blog/tutorials/' },
+          { text: '公告', link: '/blog/announcements/' }
+        ]
+      },
       { text: '控制台', link: 'https://tokenflux.cloud/dashboard/overview' }
     ],
     sidebar: {
@@ -82,7 +97,7 @@ export default defineConfig({
         {
           text: '文档',
           items: [
-            { text: '概览', link: '/docs/' },
+            { text: '快速开始', link: '/docs/' },
             { text: '使用说明', link: '/docs/markdown-examples' },
             { text: 'API 示例', link: '/docs/api-examples' }
           ]
