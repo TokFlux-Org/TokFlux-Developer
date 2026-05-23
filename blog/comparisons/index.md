@@ -10,4 +10,4 @@ readingTime: false
 
 帮助团队在直连供应商与引入网关层之间做出架构判断。
 
-- [网关与直连供应商接入的比较](/blog/comparisons/gateway-vs-direct-provider-integration)
+- [网关与直连供应商接入的比较](/blog/comparisons/gateway-vs-direct)

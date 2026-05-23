@@ -10,4 +10,4 @@ readingTime: false
 
 面向接入 TokFlux 的应用团队，聚焦生产环境中的实现路径。
 
-- [通过 OpenAI 兼容网关处理流式输出](/blog/tutorials/streaming-with-an-openai-compatible-gateway)
+- [通过 OpenAI 兼容网关处理流式输出](/blog/tutorials/streaming)

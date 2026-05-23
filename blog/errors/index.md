@@ -10,4 +10,4 @@ readingTime: false
 
 覆盖开发者真实会遇到的错误场景、排查路径与调试说明。
 
-- [排查 401 无效供应商配置](/blog/errors/fixing-401-invalid-provider-config)
+- [排查 401 无效供应商配置](/blog/errors/401-provider-config)

@@ -15,22 +15,22 @@
     <lastBuildDate>Thu, 21 May 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>网关与直连供应商接入的比较</title>
-      <link>https://developer.tokflux.com/blog/comparisons/gateway-vs-direct-provider-integration</link>
-      <guid>https://developer.tokflux.com/blog/comparisons/gateway-vs-direct-provider-integration</guid>
+      <link>https://developer.tokflux.com/blog/comparisons/gateway-vs-direct</link>
+      <guid>https://developer.tokflux.com/blog/comparisons/gateway-vs-direct</guid>
       <pubDate>Thu, 21 May 2026 03:45:00 GMT</pubDate>
       <description>对“每个应用自行对接上游”与“通过 TokFlux 统一接入”两种模式做判断导向的比较。</description>
     </item>
     <item>
       <title>排查 401 无效供应商配置</title>
-      <link>https://developer.tokflux.com/blog/errors/fixing-401-invalid-provider-config</link>
-      <guid>https://developer.tokflux.com/blog/errors/fixing-401-invalid-provider-config</guid>
+      <link>https://developer.tokflux.com/blog/errors/401-provider-config</link>
+      <guid>https://developer.tokflux.com/blog/errors/401-provider-config</guid>
       <pubDate>Thu, 21 May 2026 02:20:00 GMT</pubDate>
       <description>当 TokFlux 路由无法通过上游鉴权时的快速排查手册。</description>
     </item>
     <item>
       <title>通过 OpenAI 兼容网关处理流式输出</title>
-      <link>https://developer.tokflux.com/blog/tutorials/streaming-with-an-openai-compatible-gateway</link>
-      <guid>https://developer.tokflux.com/blog/tutorials/streaming-with-an-openai-compatible-gateway</guid>
+      <link>https://developer.tokflux.com/blog/tutorials/streaming</link>
+      <guid>https://developer.tokflux.com/blog/tutorials/streaming</guid>
       <pubDate>Thu, 21 May 2026 01:10:00 GMT</pubDate>
       <description>介绍如何在保持客户端兼容性的前提下，通过 TokFlux 接入流式返回。</description>
     </item>
