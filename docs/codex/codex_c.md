@@ -45,7 +45,7 @@ winget install Codex -s msstore
 
 第一次打开 Codex 桌面端时，如果使用官方账号，需要登录。
 
-如果已经配置好[codex 中转配置](/docs/pz/codex_a)，可以按中转配置使用 TokenFlux API。
+如果已经配置好[codex 中转配置](/docs/pz/codex_a)，可以按中转配置使用 TokFlux API。
 
 如果你有 ChatGPT Plus、Pro、Business、Edu 或 Enterprise 账号，推荐先用 ChatGPT 账号登录。官方文档也说明，使用 API Key 登录时，部分云端线程等功能可能不可用。
 

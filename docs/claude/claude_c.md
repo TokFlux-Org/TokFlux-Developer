@@ -13,7 +13,7 @@
 - 如果要写代码，建议同时安装 VS Code
 
 如果你是要在命令行或 VS Code 里使用 Claude Code，可以先配置好[Claude 中转配置](/docs/pz/claude_a)。  
-Claude 桌面端本身通常需要登录 Claude 账号，TokenFlux 配置主要用于 Claude CLI 和 Claude IDE 插件。
+Claude 桌面端本身通常需要登录 Claude 账号，TokFlux 配置主要用于 Claude CLI 和 Claude IDE 插件。
 
 ## 2. 下载 Claude 桌面端
 

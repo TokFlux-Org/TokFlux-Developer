@@ -62,7 +62,7 @@ readingTime: false
     </div>
     <div class="tokflux-code-card">
       <span>POST /v1/chat/completions</span>
-      <code>Authorization: Bearer sk-tokenflux</code>
+      <code>Authorization: Bearer sk-tokflux</code>
       <code>model: claude-sonnet / gpt / gemini / deepseek</code>
     </div>
     <div class="tokflux-flow">

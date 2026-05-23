@@ -1,8 +1,8 @@
-# 配置 Claude 使用 TokenFlux API
+# 配置 Claude 使用 TokFlux API
 
 注意：配置前一定要先把 [Node 环境配置](/docs/pz/node_a) 配置好和<span style="color: red;">使用的相应插件安装好</span>。
 
-<span style="color: red;">推荐使用：方法一</span>，用CC-Switch修改配置文件的方式配置相应工具使用 TokenFlux API。
+<span style="color: red;">推荐使用：方法一</span>，用CC-Switch修改配置文件的方式配置相应工具使用 TokFlux API。
 
 ## 方法一 
 ### 1.安装CC Switch
@@ -37,9 +37,9 @@ CC Switch 下载链接：
 
 - `供应商名称`：可以根据自己随意填写
 
-- `官网链接`：http://tokenflux.cloud
+- `官网链接`：https://tokenflux.cloud
 
-- `API Key`：在TokenFlux创建的API密钥
+- `API Key`：在 TokFlux 创建的API密钥
 
 ---
 
@@ -110,7 +110,7 @@ notepad %USERPROFILE%\.claude\settings.json
 
 如果文件不存在，记事本会提示你创建，直接点“是”即可。
 
-## 3. 修改 TokenFlux 配置
+## 3. 修改 TokFlux 配置
 
 打开 `settings.json` 后，填入下面这段：
 
@@ -133,11 +133,11 @@ notepad %USERPROFILE%\.claude\settings.json
 
 - `env`：这里用来配置 Claude CLI 运行时需要读取的环境变量。
 
-- `ANTHROPIC_AUTH_TOKEN`：这里填写你在 TokenFlux 创建的 API Key，例如 `sk-xxxxxxxxxxxxxxxxxxxxxxxx`。
+- `ANTHROPIC_AUTH_TOKEN`：这里填写你在 TokFlux 创建的 API Key，例如 `sk-xxxxxxxxxxxxxxxxxxxxxxxx`。
 
-- `ANTHROPIC_BASE_URL`：这里填写 TokenFlux 的接口地址，表示 Claude 的请求会通过 TokenFlux 转发。
+- `ANTHROPIC_BASE_URL`：这里填写 TokFlux 的接口地址，表示 Claude 的请求会通过 TokFlux 转发。
 
-- `ANTHROPIC_MODEL`：Claude 默认使用的主模型，根据自己在 TokenFlux 支持的模型列表中选择填写。
+- `ANTHROPIC_MODEL`：Claude 默认使用的主模型，根据自己在 TokFlux 支持的模型列表中选择填写。
 
 - `ANTHROPIC_REASONING_MODEL`：Claude 使用推理能力时调用的模型，根据自己选择模型填写。
 

@@ -10,7 +10,7 @@
 npm install -g @openai/codex --registry=https://registry.npmmirror.com
 ```
 
-安装成功之后需要去[codex 中转配置](/docs/pz/codex_a)配置以下环境才可以使用TokenFlux API
+安装成功之后需要去[codex 中转配置](/docs/pz/codex_a)配置以下环境才可以使用 TokFlux API
 
 ## 2.使用
 配置好环境之后: win+R 输入cmd回车: 输入以下命令进入Codex CLI界面

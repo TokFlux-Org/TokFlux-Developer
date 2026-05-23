@@ -32,7 +32,7 @@ import OpenAI from 'openai'
 
 const client = new OpenAI({
   apiKey: process.env.TOKFLUX_API_KEY,
-  baseURL: 'https://api.tokflux.com/v1'
+  baseURL: 'https://tokenflux.cloud/v1'
 })
 
 const stream = await client.chat.completions.create({

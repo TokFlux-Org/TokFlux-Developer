@@ -69,9 +69,9 @@ Claude Code
 
 ## 4. 登录 Claude
 
-配置好[Claude 中转配置](/docs/pz/claude_a)之后，通常就可以直接使用 TokenFlux API。
+配置好[Claude 中转配置](/docs/pz/claude_a)之后，通常就可以直接使用 TokFlux API。
 
-如果插件提示登录或鉴权，根据提示完成登录；如果你使用的是 TokenFlux API，请优先检查 `settings.json` 里的配置是否已经正确保存。
+如果插件提示登录或鉴权，根据提示完成登录；如果你使用的是 TokFlux API，请优先检查 `settings.json` 里的配置是否已经正确保存。
 
 ## 5. 在项目中使用 Claude
 
@@ -141,7 +141,7 @@ claude --version
 ### 鉴权失败
 
 检查 [Claude 中转配置](/docs/pz/claude_a) 是否正确。  
-重点确认 `ANTHROPIC_AUTH_TOKEN` 是否填写为 TokenFlux 的 API Key，`ANTHROPIC_BASE_URL` 是否填写正确。
+重点确认 `ANTHROPIC_AUTH_TOKEN` 是否填写为 TokFlux 的 API Key，`ANTHROPIC_BASE_URL` 是否填写正确。
 
 ### 插件没有读取到项目文件
 

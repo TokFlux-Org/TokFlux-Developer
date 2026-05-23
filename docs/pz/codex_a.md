@@ -1,8 +1,8 @@
-# 配置 Codex 使用 TokenFlux API
+# 配置 Codex 使用 TokFlux API
 
 注意：配置前一定要先把 [Node 环境配置](/docs/pz/node_a) 配置好和<span style="color: red;">使用的相应插件安装好</span>。  
 
-<span style="color: red;">推荐使用：方法一</span>，用CC-Switch修改配置文件的方式配置相应工具使用 TokenFlux API。
+<span style="color: red;">推荐使用：方法一</span>，用CC-Switch修改配置文件的方式配置相应工具使用 TokFlux API。
 
 ## 方法一 
 ### 1.安装CC Switch
@@ -42,11 +42,11 @@ CC Switch 下载链接：
 
 - `供应商名称`：可以根据自己随意填写
 
-- `官网链接`：http://tokenflux.cloud
+- `官网链接`：https://tokenflux.cloud
 
-- `API Key`：在TokenFlux创建的API密钥
+- `API Key`：在 TokFlux 创建的API密钥
 
-- `API 请求地址`：http://tokenflux.cloud/v1
+- `API 请求地址`：https://tokenflux.cloud/v1
 
 - 向下拉点击获取模型列表，选定使用的模型后点击右下角的添加按钮更新到config.toml中
 
@@ -115,7 +115,7 @@ notepad %USERPROFILE%\.codex\config.toml
 
 如果文件不存在，记事本会提示你创建，直接点“是”即可。
 
-## 3. 修改 TokenFlux 配置
+## 3. 修改 TokFlux 配置
 
 打开 `config.toml` 后，填入下面这段：
 
@@ -129,7 +129,7 @@ disable_response_storage = true
 name = "custom"
 wire_api = "responses"
 requires_openai_auth = false
-base_url = "http://tokenflux.cloud/v1"
+base_url = "https://tokenflux.cloud/v1"
 api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -141,11 +141,11 @@ api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 - `disable_response_storage = true`：表示关闭响应存储。
 - `name = "custom"`：这是这个自定义提供商的名称。
 - `wire_api = "responses"`：表示使用 Responses API 方式请求模型。
-- `requires_openai_auth = false`：表示这里不使用 OpenAI 官方登录鉴权，而是使用你自己的 TokenFlux API Key。
-- `base_url = "http://tokenflux.cloud/v1"`：表示请求会通过这个 TokenFlux 接口地址转发。
-- `api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"`：表示把 TokenFlux 的 API Key 直接写在配置文件里。
+- `requires_openai_auth = false`：表示这里不使用 OpenAI 官方登录鉴权，而是使用你自己的 TokFlux API Key。
+- `base_url = "https://tokenflux.cloud/v1"`：表示请求会通过这个 TokFlux 接口地址转发。
+- `api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"`：表示把 TokFlux 的 API Key 直接写在配置文件里。
 
-## 5. 配置 TokenFlux API Key
+## 5. 配置 TokFlux API Key
 
 这里可以有两种方式：
 
@@ -158,7 +158,7 @@ api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 name = "custom"
 wire_api = "responses"
 requires_openai_auth = false
-base_url = "http://tokenflux.cloud/v1"
+base_url = "https://tokenflux.cloud/v1"
 api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -174,9 +174,9 @@ api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 name = "custom"
 wire_api = "responses"
 requires_openai_auth = false
-base_url = "http://tokenflux.cloud/v1"
-env_key = "TOKENFLUX_API_KEY"
-env_key_instructions = "请先配置 TokenFlux 的 API Key"
+base_url = "https://tokenflux.cloud/v1"
+env_key = "TokFlux_API_KEY"
+env_key_instructions = "请先配置 TokFlux 的 API Key"
 ```
 
 然后在 Windows 里配置环境变量。
@@ -184,13 +184,13 @@ env_key_instructions = "请先配置 TokenFlux 的 API Key"
 ##### CMD
 
 ```bash
-setx TOKENFLUX_API_KEY "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
+setx TokFlux_API_KEY "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 ##### PowerShell
 
 ```powershell
-[Environment]::SetEnvironmentVariable("TOKENFLUX_API_KEY", "sk-xxxxxxxxxxxxxxxxxxxxxxxx", "User")
+[Environment]::SetEnvironmentVariable("TokFlux_API_KEY", "sk-xxxxxxxxxxxxxxxxxxxxxxxx", "User")
 ```
 
 设置完成后：
@@ -213,5 +213,5 @@ codex
 ## 7. 常见问题
 
 - 如果提示找不到 `codex` 命令，说明 Codex CLI 可能没有安装成功，或者 Node/npm 没有配置好。
-- 如果提示 `401`、`unauthorized`、`invalid api key`，一般就是 `TokenFlux API Key` 填错了，或者环境变量没有生效。
+- 如果提示 `401`、`unauthorized`、`invalid api key`，一般就是 `TokFlux API Key` 填错了，或者环境变量没有生效。
 - 如果修改后没有生效，先确认你改的是 `C:\Users\你的用户名\.codex\config.toml` 这份文件。

@@ -10,7 +10,7 @@
 npm install -g @anthropic-ai/claude-code --registry=https://registry.npmmirror.com
 ```
 
-安装成功之后需要去[Claude 中转配置](/docs/pz/claude_a)配置环境，才可以使用 TokenFlux API
+安装成功之后需要去[Claude 中转配置](/docs/pz/claude_a)配置环境，才可以使用 TokFlux API
 
 安装成功之后可以输入以下命令检查安装状态
 
