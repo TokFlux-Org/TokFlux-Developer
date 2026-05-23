@@ -8,7 +8,7 @@ hero:
   tagline: 我的优秀项目标语
   actions:
     - theme: brand
-      text: Markdown 示例
+      text: 文档
       link: /docs/markdown-examples
     - theme: alt
       text: API 示例
