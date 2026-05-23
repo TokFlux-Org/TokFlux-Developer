@@ -1,0 +1,13 @@
+.tokflux-docs-route .VPNavBar {
+  border-bottom: 1px solid var(--vp-c-divider);
+  background: rgba(245, 247, 251, 0.84);
+  backdrop-filter: blur(18px);
+}
+
+.dark .tokflux-docs-route .VPNavBar {
+  background: rgba(9, 15, 25, 0.82);
+}
+
+.tokflux-docs-route .VPDoc .content-container {
+  max-width: 820px;
+}
