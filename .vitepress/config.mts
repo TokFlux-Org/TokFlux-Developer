@@ -77,9 +77,9 @@ export default defineConfig({
         items: [
           { text: '快速开始', link: '/docs/' },
           { text: '使用说明', link: '/docs/markdown-examples' },
-          { text: 'Node 环境配置', link: '/docs/pz/node_a' },
-          { text: 'Codex 接入', link: '/docs/codex/codex_a' },
-          { text: 'Claude 接入', link: '/docs/claude/claude_a' }
+          { text: 'Node 环境配置', link: '/docs/setup/node' },
+          { text: 'Codex 接入', link: '/docs/codex/cli' },
+          { text: 'Claude 接入', link: '/docs/claude/cli' }
         ]
       },
       {
@@ -105,9 +105,9 @@ export default defineConfig({
         {
           text: '环境配置',
           items: [
-            { text: 'Node 环境配置', link: '/docs/pz/node_a' },
-            { text: 'Codex 中转配置', link: '/docs/pz/codex_a' },
-            { text: 'Claude 中转配置', link: '/docs/pz/claude_a' }
+            { text: 'Node 环境配置', link: '/docs/setup/node' },
+            { text: 'Codex 中转配置', link: '/docs/setup/codex-gateway' },
+            { text: 'Claude 中转配置', link: '/docs/setup/claude-gateway' }
           ]
         },
         {
@@ -117,18 +117,18 @@ export default defineConfig({
               text: 'Codex',
               collapsed: true,
               items: [
-                { text: 'Codex CLI', link: '/docs/codex/codex_a' },
-                { text: 'Codex IDE 插件', link: '/docs/codex/codex_b' },
-                { text: 'Codex 桌面端', link: '/docs/codex/codex_c' }
+                { text: 'Codex CLI', link: '/docs/codex/cli' },
+                { text: 'Codex IDE 插件', link: '/docs/codex/ide-plugin' },
+                { text: 'Codex 桌面端', link: '/docs/codex/desktop' }
               ]
             },
             {
               text: 'Claude',
               collapsed: true,
               items: [
-                { text: 'Claude CLI', link: '/docs/claude/claude_a' },
-                { text: 'Claude IDE 插件', link: '/docs/claude/claude_b' },
-                { text: 'Claude 桌面端', link: '/docs/claude/claude_c' }
+                { text: 'Claude CLI', link: '/docs/claude/cli' },
+                { text: 'Claude IDE 插件', link: '/docs/claude/ide-plugin' },
+                { text: 'Claude 桌面端', link: '/docs/claude/desktop' }
               ]
             }
           ]

@@ -14,7 +14,7 @@
 
 安装前建议先准备好：
 
-- 配置好[codex 中转配置](/docs/pz/codex_a)
+- 配置好[codex 中转配置](/docs/setup/codex-gateway)
 - 一个可以正常打开的项目文件夹
 
 OpenAI 官方文档说明，Codex 桌面端支持 macOS 和 Windows。Windows 版支持 PowerShell，并且可以使用 Windows 原生沙盒；如果你使用 WSL2，也可以在设置中切换。
@@ -45,7 +45,7 @@ winget install Codex -s msstore
 
 第一次打开 Codex 桌面端时，如果使用官方账号，需要登录。
 
-如果已经配置好[codex 中转配置](/docs/pz/codex_a)，可以按中转配置使用 TokFlux API。
+如果已经配置好[codex 中转配置](/docs/setup/codex-gateway)，可以按中转配置使用 TokFlux API。
 
 如果你有 ChatGPT Plus、Pro、Business、Edu 或 Enterprise 账号，推荐先用 ChatGPT 账号登录。官方文档也说明，使用 API Key 登录时，部分云端线程等功能可能不可用。
 

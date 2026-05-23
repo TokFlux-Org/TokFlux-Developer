@@ -12,7 +12,7 @@
 - 可以正常访问网络
 - 如果要写代码，建议同时安装 VS Code
 
-如果你是要在命令行或 VS Code 里使用 Claude Code，可以先配置好[Claude 中转配置](/docs/pz/claude_a)。  
+如果你是要在命令行或 VS Code 里使用 Claude Code，可以先配置好[Claude 中转配置](/docs/setup/claude-gateway)。  
 Claude 桌面端本身通常需要登录 Claude 账号，TokFlux 配置主要用于 Claude CLI 和 Claude IDE 插件。
 
 ## 2. 下载 Claude 桌面端
@@ -117,7 +117,7 @@ Windows 用户建议：
 - 如果提示网络错误，先检查网络和代理设置
 - 不要从不明网站下载所谓的 Claude 安装包
 
-如果你要在 Windows 上使用 Claude Code，还需要安装 Node.js 和 Git for Windows，并配置好[Claude 中转配置](/docs/pz/claude_a)。
+如果你要在 Windows 上使用 Claude Code，还需要安装 Node.js 和 Git for Windows，并配置好[Claude 中转配置](/docs/setup/claude-gateway)。
 
 ## 8. 常见问题
 
@@ -134,7 +134,7 @@ Windows 用户建议：
 ### 桌面端能不能直接修改代码
 
 Claude 桌面端主要适合对话、文档、文件分析和扩展能力。  
-如果要直接修改项目代码，建议使用 [Claude IDE 插件](/docs/claude/claude_b) 或 [Claude CLI](/docs/claude/claude_a)。
+如果要直接修改项目代码，建议使用 [Claude IDE 插件](/docs/claude/ide-plugin) 或 [Claude CLI](/docs/claude/cli)。
 
 ### 不知道该用桌面端还是 VS Code 插件
 

@@ -28,7 +28,7 @@ pnpm serve
 
 ```txt
 docs/
-  pz/
+  setup/
   codex/
   claude/
 blog/
@@ -40,11 +40,11 @@ blog/
 
 ## Content Naming
 
-- Blog article files live under `blog/<category>/`.
-- Use short lowercase kebab-case slugs, for example `creator-reward.md`.
-- Keep blog article slugs to 24 characters or fewer and 4 words or fewer.
-- Do not repeat the site brand in article slugs, for example prefer `blog-launch.md` over `tokflux-blog-launch.md`.
-- `index.md` files are section landing pages and are exempt from article slug rules.
+- Content files live under `docs/` or `blog/`.
+- Use short lowercase kebab-case slugs for directories and pages, for example `creator-reward.md` or `ide-plugin.md`.
+- Keep content slugs to 24 characters or fewer and 4 words or fewer.
+- Do not repeat the site brand in slugs, for example prefer `blog-launch.md` over `tokflux-blog-launch.md`.
+- `index.md` files are section landing pages and are exempt from page slug rules.
 
 ## Cloudflare Pages
 

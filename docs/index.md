@@ -24,25 +24,25 @@ node -v
 npm -v
 ```
 
-如果没有版本号，先完成 [Node 环境配置](/docs/pz/node_a)。
+如果没有版本号，先完成 [Node 环境配置](/docs/setup/node)。
 
 ## 3. 选择你的接入方式
 
 根据你要使用的工具继续配置：
 
-- [Codex CLI](/docs/codex/codex_a)：适合在命令行中使用 Codex
-- [Codex IDE 插件](/docs/codex/codex_b)：适合在编辑器中调用 Codex
-- [Codex 桌面端](/docs/codex/codex_c)：适合使用 Codex 桌面应用
-- [Claude CLI](/docs/claude/claude_a)：适合在命令行中使用 Claude
-- [Claude IDE 插件](/docs/claude/claude_b)：适合在编辑器中调用 Claude
-- [Claude 桌面端](/docs/claude/claude_c)：适合日常对话、资料整理和文档处理
+- [Codex CLI](/docs/codex/cli)：适合在命令行中使用 Codex
+- [Codex IDE 插件](/docs/codex/ide-plugin)：适合在编辑器中调用 Codex
+- [Codex 桌面端](/docs/codex/desktop)：适合使用 Codex 桌面应用
+- [Claude CLI](/docs/claude/cli)：适合在命令行中使用 Claude
+- [Claude IDE 插件](/docs/claude/ide-plugin)：适合在编辑器中调用 Claude
+- [Claude 桌面端](/docs/claude/desktop)：适合日常对话、资料整理和文档处理
 
 ## 4. 配置 TokFlux 中转
 
 如果你使用 CC Switch，推荐按对应工具的中转配置教程操作：
 
-- [Codex 中转配置](/docs/pz/codex_a)
-- [Claude 中转配置](/docs/pz/claude_a)
+- [Codex 中转配置](/docs/setup/codex-gateway)
+- [Claude 中转配置](/docs/setup/claude-gateway)
 
 常见配置项包括：
 

@@ -8,7 +8,7 @@
 
 使用前建议先按顺序完成：
 
-1. 配置 [Node 环境](/docs/pz/node_a)
+1. 配置 [Node 环境](/docs/setup/node)
 2. 安装需要使用的工具，例如 Codex 或 Claude
 3. 配置对应的中转环境
 4. 打开对应插件、CLI 或桌面端开始使用

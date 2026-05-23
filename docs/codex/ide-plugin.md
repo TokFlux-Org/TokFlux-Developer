@@ -8,7 +8,7 @@ Codex IDE 插件可以把 Codex 直接放到 VS Code 侧边栏里使用。安装
 
 - VS Code
 - 可以正常访问网络
-- 配置好[codex 中转配置](/docs/pz/codex_a)
+- 配置好[codex 中转配置](/docs/setup/codex-gateway)
 
 
 
@@ -62,7 +62,7 @@ ext install openai.chatgpt
 
 ## 4. 登录 Codex
 
-配置好[codex 中转配置](/docs/pz/codex_a)就不需要登录
+配置好[codex 中转配置](/docs/setup/codex-gateway)就不需要登录
 
 ## 5. 在项目中使用 Codex
 

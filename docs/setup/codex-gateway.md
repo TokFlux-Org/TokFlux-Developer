@@ -1,6 +1,6 @@
 # 配置 Codex 使用 TokFlux API
 
-注意：配置前一定要先把 [Node 环境配置](/docs/pz/node_a) 配置好和<span style="color: red;">使用的相应插件安装好</span>。  
+注意：配置前一定要先把 [Node 环境配置](/docs/setup/node) 配置好和<span style="color: red;">使用的相应插件安装好</span>。  
 
 <span style="color: red;">推荐使用：方法一</span>，用CC-Switch修改配置文件的方式配置相应工具使用 TokFlux API。
 
