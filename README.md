@@ -1,6 +1,6 @@
-# TokFlux Technical Blog
+# TokFlux Developer
 
-Technical articles, integration notes, and troubleshooting guides for TokFlux.
+Docs, blog, examples, and developer resources for TokFlux.
 
 ## Stack
 
@@ -28,11 +28,9 @@ pnpm serve
 
 ```txt
 docs/
-  guide/
-  api/
-  examples/
-  pricing/
-  changelog/
+  pz/
+  codex/
+  claude/
 blog/
   tutorials/
   errors/
@@ -48,7 +46,5 @@ blog/
 
 ## Notes
 
-- Docs are intentionally scaffolded only.
-- The visible site is intentionally kept as a lightweight blog.
-- RSS and sitemap are generated during build.
-- Replace the default `SITE_URL` assumption in config and `robots.txt` if the production domain differs.
+- RSS, sitemap, and Pagefind are generated during build.
+- The site uses a single TokFlux brand name across docs, blog, and landing page.
