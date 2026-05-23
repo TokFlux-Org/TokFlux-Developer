@@ -4,6 +4,7 @@ node_modules
 .vitepress/dist
 .vitepress/.temp
 .vitepress/*.log
+docs/.vitepress/
 dist
 .DS_Store
 Thumbs.db
